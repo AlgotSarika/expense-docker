@@ -8,11 +8,12 @@ RUN addgroup -S expense && adduser -S expense -G expense && \
      chown -R expense:expense /opt/backend
 #install bash
 WORKDIR /opt/backend
-COPY package.json .
-COPY *.js ./
+
 #install depencies
 RUN npm install
 ENV DB_HOST="mysql"
 # ENV DB_HOST="localhost"
 USER expense
+COPY package.json .
+COPY *.js ./
 CMD ["node","index.js"]
