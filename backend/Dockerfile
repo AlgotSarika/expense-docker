@@ -1,6 +1,5 @@
-FROM node:20-alpine
+FROM node:20
 #install bash
-RUN apk add --no-cache bash
 WORKDIR /opt/backend
 COPY package.json .
 COPY *.js .
