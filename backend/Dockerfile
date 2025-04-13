@@ -1,4 +1,4 @@
-FROM node:20-apline
+FROM node:20-alpine
 #install bash
 RUN apk add --no-cache bash
 WORKDIR /opt/backend
