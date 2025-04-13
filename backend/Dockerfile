@@ -1,6 +1,6 @@
-FROM node:20
+FROM node:20-apline
 #install bash
-RUN apt-get update && apt-get install -y bash
+RUN apk add --no-cache bash
 WORKDIR /opt/backend
 COPY package.json .
 COPY *.js .
