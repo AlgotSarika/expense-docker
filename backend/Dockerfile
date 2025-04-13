@@ -1,4 +1,5 @@
-FROM node:20
+# FROM node:20
+FROM node:20.18.3-alpinee.3.21
 #install bash
 WORKDIR /opt/backend
 COPY package.json .
