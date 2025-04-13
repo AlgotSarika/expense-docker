@@ -14,6 +14,6 @@ RUN npm install
 ENV DB_HOST="mysql"
 # ENV DB_HOST="localhost"
 USER expense
-COPY package.json .
+COPY package.json ./
 COPY *.js ./
 CMD ["node","index.js"]
