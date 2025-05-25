@@ -1,6 +1,6 @@
 # FROM node:20
 #IC-1
-FROM node:20.18.3-alpine3.21 As builder
+FROM node:20.18.3-alpine3.21 AS builder
      
 #install bash
 WORKDIR /opt/backend
